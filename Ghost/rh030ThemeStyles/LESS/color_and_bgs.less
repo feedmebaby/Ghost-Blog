@@ -1,0 +1,80 @@
+//**
+// Mixins
+//**
+.block {
+    background-color: #129287;
+} 
+
+.about_rh {
+    background-color:  #f8f8f8;
+}
+.header_rh030 {
+    background-color: @color_06;
+}
+.BodyColor () {
+    background-color: @color_01;
+    color: @color_05;
+}
+.LinkColor () {
+    color: @color_03;
+}
+.LinkHoverColor () {
+    color: @color_02;
+}
+.HeaderColor () {
+//    background-color: black;
+}
+.ArticleColor () {
+    background: white;
+    a, a:link, a:visited {
+        color: @color_03;
+    }
+    a:hover, a:focus {
+        color: @color_02;
+    }
+}
+.PostTitleColor () {
+    background-color: @color_01;
+    color: white;
+    a, a:link, a:visited {
+        color: black;
+		text-decoration: none;
+    }
+    a:hover, a:focus {
+        color: @color_06;
+    }
+}
+.FooterColor () {
+    color: black;
+    a, a:link, a:visited {
+        color: black;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover, a:focus {
+        color: @color_06;
+    }
+}
+.PaginationColor () {
+    background-color: white;
+    color: @color_05;
+ //   border: 0.063rem solid darken(@color_01, 10%);
+}
+.SharePostColor () {
+    background-color: @color_01;
+    border: 0.063em solid @color_06;
+    color: @color_06;
+    a, a:link, a:visited {
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    a:hover, a:focus {
+        color: @color_04;
+    }
+}
+.AuthorImageColor () {
+    background-color: @color_01;
+    border: 0.063em solid @color_02;
+	
+}

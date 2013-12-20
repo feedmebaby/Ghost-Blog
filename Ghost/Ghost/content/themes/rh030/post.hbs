@@ -1,0 +1,32 @@
+{{!< default}}
+{{> header}}
+<main class="main_rh030" role="main">
+{{#post}}
+<article class="article_rh030" role="article" itemscope itemtype="http://schema.org/Article">
+<header class="postheader_rh030">
+<time class="date_rh030" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">Published on {{date format='dddd DD MMM YYYY'}}</time>
+<h1 class="posttitle_rh030" itemprop="headline">{{title}}</h1>
+</header>
+<div class="postcontent_rh030" itemprop="articleBody">
+{{content}}
+</div>
+{{#if tags}}
+<div class="posttags_rh030">
+Tags: {{tags separator=" | "}}
+</div>
+{{/if}}
+    <div class="sharepost_rh030">
+    <h4 class="share_rh030">Share this post: &nbsp;</h4>
+    <a class="share_rh030 icon-twitter" target="_blank" href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}"><span class="hidethis_rh030">Twitter</span></a>
+    <a class="share_rh030 icon-facebook" target="_blank" href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}"><span class="hidethis_rh030">Facebook</span></a>
+    <a class="share_rh030 icon-gplus" target="_blank" href="https://plus.google.com/share?url={{url absolute="true"}}"><span class="hidethis_rh030">Google+</span></a>
+    </div>
+        
+</article>
+{{/post}}
+{{#if pagination}}
+<div class="pagination_rh030">
+{{{pagination}}}
+</div>
+{{/if}}
+</main>

@@ -1,0 +1,35 @@
+{{!< default}}
+{{> header}}
+<main class="main_rh030" role="main">
+{{#foreach posts}}
+<div class="postcontent_rh030" itemprop="articleBody">
+<section class="post-excerpt">
+
+</section>
+</div>
+<article class="article_rh030" role="article" itemscope itemtype="http://schema.org/Article">
+<header class="postheader_rh030">
+<time class="date_rh030"datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+Published on {{date format='dddd DD MMM YYYY'}}</time>
+<h1 class="posttitle_rh030" itemprop="headline"><a href="{{{url}}}" rel="bookmark">
+{{title}}</a></h1>
+</header>
+<div class="postcontent_rh030" itemprop="articleBody">
+<section class="post-excerpt">
+<p>{{excerpt}}</p>
+</section>
+</div>
+{{#if tags}}
+<div class="posttags_rh030">
+Tags: {{tags separator=" | "}}
+</div>
+{{/if}}
+</article>
+{{/foreach}}
+{{#if pagination}}
+<div class="pagination_rh030">
+{{{pagination}}}
+</div>
+{{/if}}
+</main>
+{{> footer}}
