@@ -41,13 +41,19 @@
 }
 
 #menu {
-    padding: 0 20px;
+    padding: 0 38px;
     font-size: 14px;
     letter-spacing: 1px;
     margin-top: 20px; 
     max-width: 850px;
     display: block;
     margin: 38px auto;
+    transition: max-width 1.0s ease-in;
+    -webkit-transition: max-width 1.0s ease-in 0;
+}
+
+.top.scrolled #menu{
+    max-width: 100%;
 }
 
 #menu ul {

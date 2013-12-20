@@ -1,6 +1,11 @@
 //**
 // Mixins
 //**
+.top.scrolled{
+background-color: #f8f8f8;
+    
+}
+
 .block {
     background-color: #129287;
 } 
@@ -31,6 +36,8 @@
     }
     a:hover, a:focus {
         color: @color_02;
+        transition: color 0.20s ease-in;
+        -webkit-trasition: color 0.20s ease-in;
     }
 }
 .PostTitleColor () {

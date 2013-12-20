@@ -1,3 +1,6 @@
+.top.scrolled {
+  background-color: #f8f8f8;
+}
 .block {
   background-color: #129287;
 }
@@ -188,13 +191,18 @@ h1.posttitle_rh030 a:focus {
   z-index: 2000;
 }
 #menu {
-  padding: 0 20px;
+  padding: 0 38px;
   font-size: 14px;
   letter-spacing: 1px;
   margin-top: 20px;
   max-width: 850px;
   display: block;
   margin: 38px auto;
+  transition: max-width 1s ease-in;
+  -webkit-transition: max-width 1s ease-in 0;
+}
+.top.scrolled #menu {
+  max-width: 100%;
 }
 #menu ul {
   list-style: none outside none;
@@ -280,6 +288,8 @@ a:link {
 .article_rh030 a:hover,
 .article_rh030 a:focus {
   color: #ef9335;
+  transition: color 0.2s ease-in;
+  -webkit-trasition: color 0.2s ease-in;
 }
 .postcontent_rh030 {
   padding-top: 0.5em;
