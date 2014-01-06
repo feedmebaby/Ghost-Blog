@@ -44,11 +44,20 @@
         var scroll = $(window).scrollTop();
 
         if (scroll > 500) {
-            if (!$('.top').hasClass('scrolled'))
-                $('.top').addClass('scrolled')
+            if (!$('.top.animate').hasClass('scrolled'))
+                $('.top.animate').addClass('scrolled')
         } else {
-            if ($('.top').hasClass('scrolled'))
-                $('.top').removeClass('scrolled')
+            if ($('.top.animate').hasClass('scrolled'))
+                $('.top.animate').removeClass('scrolled')
+        }
+
+    });
+    $("#hamburger").on("click",function(){ 
+        if ($(".navigation").hasClass("active")){
+            $(".navigation").removeClass("active");
+
+        } else {
+        $(".navigation").addClass("active"); 
         }
 
     });

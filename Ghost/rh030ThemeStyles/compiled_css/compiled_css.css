@@ -10,6 +10,9 @@
 .header_rh030 {
   background-color: #129287;
 }
+.date_rh030 {
+  color: #c9c9c9;
+}
 .footer_rh030 {
   font-size: 0.8em;
   line-height: 2.0em;
@@ -101,8 +104,7 @@ h6 {
   text-decoration: none;
 }
 h1.posttitle_rh030 {
-  background-color: #ffffff;
-  color: white;
+  color: #129287;
 }
 h1.posttitle_rh030 a,
 h1.posttitle_rh030 a:link,
@@ -160,6 +162,21 @@ h1.posttitle_rh030 a:focus {
   content: "\e000";
   margin-right: 0.5em;
 }
+.navigation.active {
+  z-index: 900;
+  opacity: 1;
+}
+.navigation {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  opacity: 0;
+  z-index: 0;
+}
+.main_rh030.padding-top {
+  padding-top: 10em;
+}
 .about_rh {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -180,8 +197,11 @@ h1.posttitle_rh030 a:focus {
   text-align: center;
 }
 .main_rh030 {
+  display: block;
   max-width: 54em;
   margin: 0 auto;
+  z-index: 5;
+  position: relative;
 }
 .top {
   background: none repeat scroll 0 0 #FFFFFF;
@@ -198,8 +218,8 @@ h1.posttitle_rh030 a:focus {
   max-width: 850px;
   display: block;
   margin: 38px auto;
-  transition: max-width 1s ease-in;
-  -webkit-transition: max-width 1s ease-in 0;
+  transition: max-width 0.5s ease-in;
+  -webkit-transition: max-width 0.5s ease-in 0;
 }
 .top.scrolled #menu {
   max-width: 100%;
@@ -265,6 +285,8 @@ a:link {
 .wrapper_rh030 {
   width: 100%;
   margin: 0 auto;
+  z-index: 1;
+  position: relative;
 }
 /*.header_rh030 {
 	.HeaderColor;

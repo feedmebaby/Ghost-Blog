@@ -1,7 +1,26 @@
 //**
 // Styles
 //**
+.navigation.active{
+    z-index: 900;
+    opacity: 1;
 
+}
+.navigation {
+
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    opacity: 0;
+    z-index: 0;
+    // display: none;
+
+}
+.main_rh030.padding-top {
+
+    padding-top: 10em;
+}
 .about_rh {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -26,9 +45,11 @@
     text-align: center;
 }
 .main_rh030{
-	
+	display: block;
     max-width: @readable_width + 2 * @add_padding;
 	margin: 0 auto;
+    z-index: 5;
+    position: relative;
 }
 
 .top {
@@ -48,8 +69,8 @@
     max-width: 850px;
     display: block;
     margin: 38px auto;
-    transition: max-width 1.0s ease-in;
-    -webkit-transition: max-width 1.0s ease-in 0;
+    transition: max-width 0.5s ease-in;
+    -webkit-transition: max-width 0.5s ease-in 0;
 }
 
 .top.scrolled #menu{
@@ -119,6 +140,8 @@ margin-top: 95px;
 .wrapper_rh030 {
     width:100%;
     margin: 0 auto;
+    z-index: 1;
+    position: relative;
 }
 /*.header_rh030 {
 	.HeaderColor;
@@ -138,6 +161,7 @@ margin-top: 95px;
 .postcontent_rh030 {
     padding-top: 0.5em;
 }
+
 .footer_rh030 {
     .FooterColor;
     max-width: @readable_width + 2 * @add_padding;
